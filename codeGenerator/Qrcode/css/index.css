@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(179, 184, 182);
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    flex-direction: column;
+}
+.imageContainer{
+    display: flex;
+    margin-top: 70px;
+    margin-left:600px;
+    background-color: aliceblue;
+    flex-direction: column;
+    max-width: 20%;
+    border-radius: 20px;
+}
+.qrimage{
+    height: 100%;
+    width: 100%;
+    padding: 20px 10px 10px 20px;
+}
+img{
+    border-radius: 20px;
+    height: 80%;
+    width:90%
+}
+.textparagraph{
+    padding:10px 10px 20px 30px;
+}
+#contentTitle{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contentScan{
+    font-size: 1.5em;
+    color: rgb(100, 96, 96);
+}
