@@ -5,5 +5,7 @@
 ![](assets/task.png)
 
 
- <h2>My solution</h2>
-![](assets/solution.png)
+<h2>My solution</h2>
+ 
+![](assets/task.png)
+
