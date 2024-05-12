@@ -141,7 +141,7 @@ form{
 }
 .input{
     background-color:#E2E8F0;
-    background-image: url('/assets/tick.png');
+    background-image: url('../assets/tick.png');
     height: 40px;
     width: 400px;
     background-repeat: no-repeat;
