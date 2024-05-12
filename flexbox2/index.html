@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="logo">
+          <img id="logoimg" src="./assets/logo.png" />
+        </div>
+
+        <div class="pages">
+          <div class="home">Home</div>
+          <div class="shop">Shop</div>
+          <div class="contact">Contact</div>
+          <div class="help">Help</div>
+        </div>
+
+        <div class="profile">
+          <div class="accountbutton">
+            Account
+            <img id="accountimg" src="./assets/accont.png" />
+          </div>
+          <div class="itemsbutton">
+            Items
+            <img id="itemscartimg" src="./assets/cart.png" />
+          </div>
+          <div class="profilepict">
+            <img id="profilepic" src="./assets/profile.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="accountsummary">
+          <div class="progressbar">
+            <div class="accountpg">Account</div>
+            <div class="stage">
+              <img id="line" src="./assets/line.png" />
+              <img id="tick" src="./assets/tick.png" />
+              <img id="line" src="./assets/line.png" />
+            </div>
+            <div class="shippingpg">Shipping</div>
+            <div class="stage">
+              <img id="line" src="./assets/line.png" />
+              <img id="tick" src="./assets/tick.png" />
+              <img id="line" src="./assets/line.png" />
+            </div>
+            <div class="paymentpg">Payment</div>
+          </div>
+          <div class="acoountform">
+            <form action="" method="">
+              <h3>Account details</h3>
+              <div class="emaillebel"><label> Email address</label></div>
+              <div class="inputs">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  value="Email@myemail.com"
+                />
+              </div>
+              <div class="passwordlebel"><label> Password</label></div>
+              <div class="inputs">
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  value="password"
+                />
+              </div>
+              <div class="buttons">
+                <button id="loginbutton">register for account</button
+                ><button style="background-color: #3182ce" id="loginbutton">
+                  login
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="orderbuttons">
+            <button id="loginbutton">cancel order</button
+            ><button id="loginbutton" style="background-color: #3182ce">
+              sipping detail
+            </button>
+          </div>
+        </div>
+
+        <div class="ordersummary">
+          <div class="summary">
+            <h3>Order Summary</h3>
+            <img id="headphones" src="./assets/headphones.png">
+            <div class="itemscount"> 
+              <div class="item">
+                <h3>Sony Wireless headphones</h3>
+                <h4>£320.45</h4>
+              </div>
+              <div class="itemcounter">
+              <button id="counter">-</button>
+              <p id="countervalue">1</p>
+              <button id="counter">+</button>
+              </div>
+              </div>
+            
+            </div>
+            <div class="total">
+              <form action="" method="">
+                <p>Gift Card/ Discount code</p>
+                <div class="dicounts">
+                  <input
+                    class="discount"
+                    type="text"
+                  />
+                  <button id="discountbutton">apply</button>
+                </div>
+                <div class="subtotal">
+                  <div class="sbt">Sub  total</div>
+                  <div class="sbtvaue">£316.55</div>
+                </div>
+                <div class="tax">
+                  <div class="sbt">Tax</div>
+                  <div class="sbt">£3.45</div>
+                </div>
+                <div class="ship">
+                  <div class="sbt">Shipping</div>
+                  <div class="free">Free</div>
+                </div>
+                <div class="Total">
+                  <div class="sbt">Totla</div>
+                  <div class="sbt">£320.45</div>
+                </div>        
+              
+              </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

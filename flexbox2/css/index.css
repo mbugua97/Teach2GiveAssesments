@@ -1,0 +1,242 @@
+body {
+  height: 100vw;
+  width: 100vw;
+}
+
+.main {
+  height: 90vh;
+  width: 90vw;
+  margin-left: 20px;
+  background-color: white;
+}
+
+/*nav bar*/
+
+.navbar {
+  display: flex;
+  height: 70px;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  padding-left: 10px;
+  margin-top: 10px;
+  padding-right: 40px;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1px;
+}
+
+.logo {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.pages {
+  display: flex;
+  padding-top: 20px;
+}
+
+.home,
+.shop,
+.contact,
+.help {
+  margin-right: 40px;
+}
+
+.profile {
+  display: flex;
+  margin-right: 60px;
+}
+
+.accountbutton,
+.itemsbutton {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.profilepict {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#itemscartimg {
+  height: 15px;
+  padding-left: 5px;
+}
+#accountimg {
+  height: 7px;
+  padding-left: 5px;
+}
+
+#profilepic {
+  border-radius: 50px;
+  height: 44px;
+  width: 44px;
+}
+#logoimg {
+  height: 40px;
+  border-radius: 10;
+}
+
+/*body*/
+
+/*account summary*/
+.body {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.accountsummary {
+background-color: #E2E8F0;
+  height: 550px;
+  width: 500px;
+  margin-left: 150px;
+  margin-top: 20px;
+  margin-right: 60px;
+  padding-right: 60px;
+}
+/*progres bar*/
+
+.progressbar {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.paymentpg {
+  padding-left: 10px;
+}
+.shippingpg {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.accountpg {
+  padding-right: 10px;
+}
+.stage {
+  display: flex;
+}
+
+#line {
+  height: 2px;
+  width: 40px;
+  padding-top: 10px;
+}
+#tick {
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/*form*/
+form{
+    margin-left: 30px;
+}
+.emaillebel,.passwordlebel{
+    margin-bottom: 15px;
+}
+.inputs{
+    margin-bottom: 10px;
+}
+.input{
+    background-color:#E2E8F0;
+    background-image: url('/assets/tick.png');
+    height: 40px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 350px ;
+    border: none;
+    outline: none;
+}
+.buttons{
+    padding-left: 120px;
+    display: flex;
+}
+
+#loginbutton{
+    background-color:white;
+    border-radius: 5px;
+    margin-left: 40px;
+    width:100px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+    
+.orderbuttons{
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 100px;
+    height: 50px;
+}
+/*order summary*/
+
+.ordersummary {
+    background-color: #E2E8F0;
+    width: 500px;
+    height: 550px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding-left: 30px;
+  }
+  .summary{
+    display:flex;
+    flex-direction: column;
+  }
+  #headphones{
+    width: 200px;
+    height: 70px;
+  }
+  .itemscount{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  .itemcounter{
+    display: flex;
+    height: 20px;
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+  .item{
+    display: flex;
+    flex-direction: column;
+  }
+  #counter{
+    margin-top: 2px;
+  }
+  #countervalue{
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .total{
+    margin-left: -30px;
+  }
+  .discount{
+    background-color:#E2E8F0;
+    height: 40px;
+    width: 300px;
+    background-size: 20px;
+    background-position: 350px ;
+    border: none;
+    outline: none;
+}
+#discountbutton{
+    border-color:#3182CE;
+    color:#3182CE;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+.subtotal,.tax,.ship,.Total{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.free{
+    color:#3182CE
+}
