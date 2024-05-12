@@ -86,7 +86,7 @@ body {
 }
 
 .accountsummary {
-background-color: #E2E8F0;
+background-color: #fcfdff;
   height: 550px;
   width: 500px;
   margin-left: 150px;
@@ -174,7 +174,7 @@ form{
 /*order summary*/
 
 .ordersummary {
-    background-color: #E2E8F0;
+    background-color: #ffffff;
     width: 500px;
     height: 550px;
     margin-top: 20px;
