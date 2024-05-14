@@ -1,0 +1,122 @@
+.wrapper{
+    height:100vh;
+    width:100vw
+}
+
+img{
+    border-radius: 100px;
+    height: 80px;
+    width:80px
+}
+
+.container{
+    margin-left: 600px;
+    margin-top: 300px;
+    background-color: aliceblue;
+    height:700px;
+    width:1200px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    padding-right: 30px;
+    padding-left:150px;
+    padding-top:100px;
+    padding-bottom: 300px;
+    column-gap: 20px;
+}
+
+
+.left{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+}
+
+
+
+
+.upper{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 20px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+.upperright{
+    background-color: rgb(136, 131, 132) ;
+} 
+
+.urprofile{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 20px;
+}
+.urprofilename{
+    padding-top: 10px;
+
+}
+.urprofileimage{
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+
+.upperleft{
+    background-color:purple;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+}
+
+.ulprofile{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    padding-left: 20px;
+}
+.ulprofilename{
+    padding-top: 10px;
+
+}
+.ulprofileimage{
+    padding-top: 20px;
+}
+
+
+.lowerright{
+    background-color: rgb(253, 253, 255);
+}
+.lowerleft{
+    background-color: rgb(12, 12, 11);
+}
+
+
+
+/*right section*/
+.right{
+    background-color: rgb(253, 253, 255);
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.profileimage{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.profilename{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+h2{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
