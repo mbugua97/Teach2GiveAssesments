@@ -1,40 +1,51 @@
-// Quiz 2: Write a JavaScript program to check a student's 
-// total marks in various examinations.
-// The student will get an A+ grade if the total marks are in the range 89..100 inclusive,
-// if the examination is "Final" the student will receive an A+ grade
-//  and total marks must be greater than or equal to 90. 
-//  If the student gets an A+ grade, 
-//  return true, otherwise return false.
-
-
-//an array containing students marks
-var studentMarks=[10,20,20,20,23]
-
-//function agregating up the marks and returning the grade
-
-function gradeStudent(marks){
-    var totalSum=0;
-    //iterating through the array summing up the marks
-    for (var i=0;i<marks.length;i++){
-        totalSum+=marks[i];
+function checkGrade(totalMarks, examType) {
+    if(totalMarks>=89){
+        //checking if its final exan 
+        if(examType=='Final'){
+            console.log(`Excellent job, you got an A+ in your ${examType}`);
+        }
+        else{
+            console.log(`Excellent job, you got an A+ in your ${examType}`);
+        }
     }
-
-    //checking if the student has 90+ so as to get A+
-    console.log(totalSum);
-
-
-//returning true if greater than 90
-    if(totalSum>=90){
-        console.log("true");
-        return true
+    else if(totalMarks>=80 && totalMarks<89){
+        //checking if its final exan 
+        if(examType=='Final'){
+            console.log(`Well done, you got an A in your ${examType}`);
+        }
+        else{
+            console.log(`Well done, you got an A in your ${examType}`);
+        }
     }
-//returning false if less than 90
-    else{
-        console.log("false");
-        return false
+    else if(totalMarks>=75 && totalMarks<80){
+        //checking if its final exan 
+        if(examType=='Final'){
+            console.log(`Well done, you got a B+ in your ${examType}`);
+        }
+        else{
+            console.log(`Well done, you got a B+ in your ${examType}`);
+        }
     }
-}
-
-
-//function call
-gradeStudent(studentMarks)
+    else if(totalMarks>=70 && totalMarks<75){
+        //checking if its final exan 
+        if(examType=='Final'){
+            console.log(`Nice work, you got a B in your${examType}`);
+        }
+        else{
+            console.log(`Nice work, you got a B. in your ${examType}`);
+        }
+    }
+    else if(totalMarks>=60 && totalMarks<70){
+        //checking if its final exan 
+        if(examType=='Final'){
+            console.log(`You got a C.in your ${examType}`);
+        }
+        else{
+            console.log(`You got a C. in your${examType}`);
+        }
+    }
+    else if (totalMarks<60){
+            console.log(`You need to improve`);
+    }
+ 
+ }
