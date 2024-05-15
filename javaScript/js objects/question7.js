@@ -2,19 +2,16 @@
 // Sample Data: dog
 // Expected Output: ["d", "do", "dog", "o", "og", "g"]
 
+var name="dog"
 
+var solu=[]
 
-
-let name=function(str){
-    var len=str.length
-    var subSets=[]
-    for(var i=0;i<len;i++){
-        for(var x=i;x<len;x++){
-            var hold=str.slice(i,x+1)
-            subSets.push(hold)
-        }
+for(var i=0;i<3;i++){
+    for(var x=i;x<3;x++){
+       var hold= name.slice(i,x+1)
+       solu.push(hold)
     }
-    return subSets
 }
 
-console.log(name("dog"));
+
+console.log(solu);
