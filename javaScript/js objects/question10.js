@@ -20,7 +20,7 @@ var library = [
 var len=Object.keys(library).length
 
 
-//sorting using bubblesort
+//sorting using bubblesort to sort the objects in the array
 
 for(var i=0;i<len;i++){
     for(var x=i;x<len;x++)
@@ -35,4 +35,4 @@ for(var i=0;i<len;i++){
     }
 }
 
-console.log(library);
+console.log(library)
