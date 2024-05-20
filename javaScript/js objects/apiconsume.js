@@ -75,11 +75,10 @@ const popularPosts = activeUsers.flatMap(user => user.posts.filter(post => post.
 // Calculate Average Likes per User: Reduce the remaining popular posts to a single value representing the average number of likes per active user across all their popular posts
 const averageLikesPerUser = popularPosts.reduce((totalLikes, post) => totalLikes + post.likes, 0) / activeUsers.length;
 
-// Bonus: Extend the function to return an object containing the number of active users, the total number of popular posts, and the average likes per user
-const dashboardData = {
+const dashBoardData = {
   activeUsers: activeUsers.length,
   totalPopularPosts: popularPosts.length,
   averageLikesPerUser: averageLikesPerUser
 };
 
-console.log(dashboardData);
+console.log(dashBoardData);
