@@ -70,15 +70,12 @@ console.log(userWithReducedRecentpost);
 
 
 // Extract Popular Posts: From the active users' posts, filter out those with less than 10 likes
-const popularPosts = activeUsers.flatMap(user => user.posts.filter(post => post.likes >= 10));
+const popularPosts = users.flatMap(user => user.posts.filter(post => post.likes >= 10));
 
 // Calculate Average Likes per User: Reduce the remaining popular posts to a single value representing the average number of likes per active user across all their popular posts
-const averageLikesPerUser = popularPosts.reduce((totalLikes, post) => totalLikes + post.likes, 0) / activeUsers.length;
+const averageLikesPerUser = popularPosts.reduce((totalLikes, post) => totalLikes + post.likes, 0) / userWithReducedRecentpost.length;
 
-const dashBoardData = {
-  activeUsers: activeUsers.length,
-  totalPopularPosts: popularPosts.length,
-  averageLikesPerUser: averageLikesPerUser
-};
 
-console.log(dashBoardData);
+console.log(`activeUsers: ${userWithReducedRecentpost.length},
+  totalPopularPosts: ${popularPosts.length},
+  averageLikesPerUser: ${averageLikesPerUser}`);
