@@ -52,3 +52,34 @@ const users = [
     }
   ];
 
+  
+  //Filter Active Users: Identify users who have posted at least once in the past week (based on timestamp).
+  //returns the active users,user id,recent post date by checking their most recent post within the last one week
+
+let timeNow=new Date()
+let OneWeekAgo=timeNow.getDate()-7
+let userWithReducedRecentpost=users.map((user)=>
+{
+  return( (`${user.id},${user.name},${user.posts.reduce((post)=>(Date.parse(post.timestamp)>OneWeekAgo?post.timestamp:0))}`
+
+))}
+
+).map((user)=>{return (user.split(','))}).filter((user)=>{return (user[2]!=0)})
+
+console.log(userWithReducedRecentpost);
+
+
+// Extract Popular Posts: From the active users' posts, filter out those with less than 10 likes
+const popularPosts = activeUsers.flatMap(user => user.posts.filter(post => post.likes >= 10));
+
+// Calculate Average Likes per User: Reduce the remaining popular posts to a single value representing the average number of likes per active user across all their popular posts
+const averageLikesPerUser = popularPosts.reduce((totalLikes, post) => totalLikes + post.likes, 0) / activeUsers.length;
+
+// Bonus: Extend the function to return an object containing the number of active users, the total number of popular posts, and the average likes per user
+const dashboardData = {
+  activeUsers: activeUsers.length,
+  totalPopularPosts: popularPosts.length,
+  averageLikesPerUser: averageLikesPerUser
+};
+
+console.log(dashboardData);
