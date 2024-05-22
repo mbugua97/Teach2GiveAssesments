@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<style>
+  body , .jumbotron {padding: 30px}
+  .text-giant {font-size:40px}
+</style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h2>How much do pies costs</h2>
+    <form>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input onchange="add()" id="price" value="20" type="number" >
+    </div>
+ 
+
+  <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <span class="label label-primary" id="quantity-label">1</span>
+      <!-- <input type="number" class="form-control" name="quantity" placeholder="quantity" value="1"> -->
+      <input onchange="add()" id="quantity" type="range" class="form-control" name="quantity" placeholder="quantity" value="1" min="1" max="100" step="1">
+    </div>
+  </form>
+
+ 
+  <div id="total" class="text-right text-giant total">$ 20
+  </div>
+ 
+  </div>
+
+
+
+<script src="./assets/js/index.js"></script>
+</body>
+<html>
