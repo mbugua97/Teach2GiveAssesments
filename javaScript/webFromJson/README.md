@@ -2,10 +2,10 @@ The aim of this assessment is to design "THE SOLUTION"
 by rendering the html from the data/json 'verification of data using async and wait in javascript'
 
 solution
-![](./solution.png)
+![](./assets/solution.png)
 
 Task
-![](./task.png)
+![](./assets/task.png)
 
 Thedata
 {
