@@ -1,0 +1,62 @@
+body{
+    background-image: url("../images/cldsa.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sunimage{
+    height:400px
+}
+.search{
+    margin-left: 800px;
+    margin-top: 200px;
+    margin-right:600px;
+    background-color:white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+}
+
+.locationweather{
+    padding-left: 100px;
+    padding-top:50px;
+    border-radius: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#search{
+    height:50px;
+}
+input{
+    height:60px;
+    width: 990px;
+    margin-left: 90px;
+    border: none;
+    background-color:white;
+} 
+#buttontext{
+    margin-bottom: 20px;
+    color: white;
+}
+#searchbtn{
+box-shadow: none;
+border: none;
+background-color:white;
+
+margin-top: 20px;
+}
+.poetsen-one-regularl .input {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: bold; 
+    font-size: 4rem;
+  }
+  .today {
+    font-size: 2rem;
+  }
+
+.vas{
+    box-shadow: 1px 1px 1px 1px;
+    margin-bottom: 20px;
+}

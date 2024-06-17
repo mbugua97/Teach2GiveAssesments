@@ -3,7 +3,6 @@ let total=0;
 let totalOutput=document.querySelector('#total')
 let totalquantitylabel=document.querySelector('#quantity-label')
 
-//
 function add() {
   let price = document.querySelector("#price")
   let quantity = document.querySelector("#quantity")

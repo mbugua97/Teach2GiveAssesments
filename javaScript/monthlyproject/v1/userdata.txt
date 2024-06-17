@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "admin":true,
+        "name":"mbugua"
+    },
+      
+    {
+        "id": 2,
+        "admin":true,
+        "name":"leo"
+    },
+    {
+        "id": 3,
+        "admin":false,
+        "name":"sam"
+    }
+]

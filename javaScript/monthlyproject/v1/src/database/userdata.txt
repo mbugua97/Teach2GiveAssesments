@@ -1,0 +1,6 @@
+users=[
+{uname:"mbugua","admin":true},
+{uname:"mac","admin":true},
+{uname:"sue","admin":false},
+{uname:"sam","admin":false},
+]
