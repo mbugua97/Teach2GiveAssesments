@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:mysql@localhost:3200/events"
+}
+
+model events {
+  id       Int       @id
+  imageUrl String?   @db.VarChar(255)
+  title    String?   @db.VarChar(100)
+  price    Decimal?  @db.Decimal(10, 2)
+  date     DateTime? @db.DateTime(0)
+  location String?   @db.VarChar(100)
+  company  String?   @db.VarChar(100)
+}

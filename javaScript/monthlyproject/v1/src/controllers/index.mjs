@@ -8,13 +8,33 @@ export const readEvents =ReadEvents
 export const readEvent=ReadEvent
 
 
-export const createEvents=(req, res) => {
+export const createEvents=async (req, res) => {
     const errors = validationResult(req)    
     if(!errors.isEmpty()) {
         return res.status(400).json({errors: errors.array()})
     }
-    res.send(req.body)
-}
+    const { imageUrl,title, price, date, location, company } = req.body;
+
+    try {
+      const newEvent = {
+        imageUrl,
+        title,
+        price,
+        date:new Date(date).toISOString(),
+        location,
+        company,
+      };
+  
+      const createdEvent = await AddEvents(newEvent);
+  
+      res.status(201).json(createdEvent);
+    } catch (error) {
+      console.error(`Error creating event: ${error.message}`);
+      res.status(500).json({ error: error.message });
+    }
+};
+
+
 
 //get a single user by id
 export const deleteEvent = (req, res) => {
