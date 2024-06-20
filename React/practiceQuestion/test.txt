@@ -1,0 +1,17 @@
+Initial Setup
+Create a React project using vite or any other method you prefer.
+In your App component, define the initial stories data as provided.
+Define the List Component
+Create a List component that accepts a list prop and renders a list of items.
+Ensure each item in the list is passed as a prop to an Item component.
+Define the Item Component
+Create an Item component that accepts an item prop.
+Render the item's details (title, author, number of comments, points) inside the Item component.
+Pass Stories to List Component
+In the App component, pass the initial stories data to the List component as a prop.
+Add a Search Input
+Add a search input field in the App component.
+Use the useState hook to manage the state of the search term.
+Filter Stories Based on Search Term
+Filter the stories based on the search term.
+Pass the filtered list of stories to the List component.

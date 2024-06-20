@@ -1,0 +1,33 @@
+Question 1: What is useState in React? 
+            Answer: useState is a React hook that allows function components to manage and update state.
+
+
+ • Question 2: How do you use useState to declare state in a function component?
+            Answer: const [state, setState] = useState(initialState); 
+
+
+
+• Question 3: What triggers a re-render in React? 
+            Answer: State changes or prop updates can trigger a re-render in React.
+
+
+ • Question 4: What is the purpose of the initial state in useState? 
+            Answer: It sets the initial value of the state variable and only applies during the first render.
+
+
+• Question 5 : How do you update state using useState? 
+            Answer: Use the second entry returned by useState to update the state. • Question: Does calling setState trigger an immediate re-render? – Answer: No, React batches state updates and performs re-renders asynchronously for performance reasons. 
+
+
+• Question 6: What is the difference between using multiple useState calls and a single useState call with an object?
+            Answer: Using multiple calls creates independent state variables, while a single call with an object allows you to manage multiple state values within one variable. 
+
+
+
+• Question 7: Can you directly mutate the state variable obtained from useState? 
+            Answer: No, you should always use the setState function to update the state in a immutable way. 
+
+
+
+• Question 8: Does updating state always trigger a re-render?  
+            Answer: Yes, updating state with setState triggers a re-render of the component.
